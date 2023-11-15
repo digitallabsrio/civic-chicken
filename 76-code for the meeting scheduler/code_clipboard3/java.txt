@@ -1,0 +1,3 @@
+public class Calendar {
+  private List<Meeting> meetings;
+}

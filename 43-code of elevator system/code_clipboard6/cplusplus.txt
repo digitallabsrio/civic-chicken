@@ -1,0 +1,29 @@
+class ElevatorSystem {
+    private:
+        Building building;
+        static ElevatorSystem system = NULL;
+    public: 
+        void monitoring();
+        void dispatcher();
+
+        static ElevatorSystem getInstance() {
+            if (system == NULL) {
+            system = new ElevatorSystem();
+            }
+            return system;
+        }
+};
+
+class Building {
+    private: 
+        vector<Floor> floor;
+        vector<ElevatorCar> elevator; 
+        static Building building = NULL;
+    public: 
+        static Building getInstance() {
+            if (building == NULL) {
+            building = new Building();
+            }
+            return building;
+        }
+};

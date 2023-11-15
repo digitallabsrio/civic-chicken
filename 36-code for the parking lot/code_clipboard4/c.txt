@@ -1,0 +1,20 @@
+class DisplayBoard {
+  // Data members
+  private int id;
+  private List<Handicapped> handicappedSpot;
+  private List<Compact> compactSpot;
+  private List<Large> largeSpot;
+  private List<MotorCycle> motorCycleSpot;
+
+  // Member functions
+  public void ShowFreeSlot();
+}
+
+class ParkingRate {
+  // Data members
+  private double hours;
+  private double rate;
+
+  // Member function
+  public void Calculate();
+}

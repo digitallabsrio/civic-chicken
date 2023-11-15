@@ -1,0 +1,24 @@
+class DisplayBoard {
+// Data members
+  private:
+    int id;
+    vector<Handicapped> handicappedSpot;
+    vector<Compact> compactSpot;
+    vector<Large> largeSpot;
+    vector<MotorCycle> motorCycleSpot;
+
+  // Member functions
+  public:
+    void showFreeSlot();
+};
+
+class ParkingRate {
+  // Data members
+  private:
+    double hours;
+    double rate;
+
+// Member function
+  public: 
+    void calculate();
+};

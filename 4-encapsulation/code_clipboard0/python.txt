@@ -1,0 +1,10 @@
+class Movie:
+  def __init__(self):
+    self.title = ""
+    self.year = -1
+    self.genre = ""
+
+  def __init__(self, t, y, g):
+    self.title = t
+    self.year = y
+    self.genre = g
